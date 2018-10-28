@@ -1,15 +1,13 @@
-# Code Chrysalis solo project
-
-This was created during my time as a student at Code Chrysalis.
-
 # Introduction
+
+This was created during my time as a student at Code Chrysalis!
 
 This API allows you to list, add, update your favorite sushi-bars. And also if you feel sushi should be disappeared, you can delete all data.
 
-# Data Type
+# Data
 
 You have one table called sushi_bars.
-In sushi_bars table, there are three columns like below.
+Sushi_bars table has sushi_bars name and rating informatino like below.
 
 **1. id:** Auto incremental interger.
 
@@ -46,3 +44,5 @@ In sushi_bars table, there are three columns like below.
 You can interact with this API below.
 It's working on heroku.
 [DEMO](https://sushi-log.herokuapp.com/)
+
+Please use [postman](https://www.getpostman.com/) to test to POST.
