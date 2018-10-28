@@ -72,4 +72,23 @@ describe("The express server", () => {
       });
     });
   });
+  describe("DELETE /sushi_bar/delete", () => {
+    it("should send status 200", async () => {
+      const res = await request.delete("/sushi_bar/delete");
+      res.should.have.status(200);
+    });
+    it("should delete all data", () => {
+      const result = request.put("/sushi_bar/replace/21/kappa/2");
+      const check = request.get("/sushi_bar/21");
+      Promise.all([result, check]).then(data => {
+        JSON.parse(data[1].text)
+          .pop()
+          .should.deep.equal({
+            id: 21,
+            name: "kappa",
+            rating: 2
+          });
+      });
+    });
+  });
 });
