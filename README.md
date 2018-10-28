@@ -4,7 +4,7 @@ This was created during my time as a student at Code Chrysalis!
 
 This API allows you to list, add, update your favorite sushi-bars. And also if you feel sushi should be disappeared, you can delete all data.
 
-# Data
+# DATA
 
 You have one table called sushi_bars.
 Sushi_bars table has sushi_bars name and rating informatino like below.
@@ -46,3 +46,7 @@ It's working on heroku.
 [DEMO](https://sushi-log.herokuapp.com/)
 
 Please use [postman](https://www.getpostman.com/) to test to POST.
+
+# REFERENCE
+
+I use [yelp-fusion API](https://www.yelp.com/developers/documentation/v3) to get sushi_bar data and rating data.
