@@ -4,12 +4,39 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SUSHI-BAR</title>
+    <title>SUSHI-LOG</title>
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
 
 <body>
-    <h1>Hello WORLD!</h1>
+    <h1>SUSHI LOG!</h1>
+    <h2>Introduction</h2>
+    <p>This API allows you to list, add, update your favorite sushi-bars. And also if you feel sushi should be
+        disappeared, you can delete all data.</p>
+    <h2>What you can do with this API</h2>
+    <p>
+        1. GET
+
+        - all
+        /sushi_bar
+        - specific
+        /sushi_bar/:id
+
+        2. POST
+
+        - Add a new sushi_bar
+        /sushi_bar/add/:name/:rating
+
+        3) PUT
+
+        - Add or Replace sushi_bar.
+        /sushi_bar/replace/:id/:name/:rating
+
+        4) DELETE
+        - Delete all data
+        /sushi_bar/delete
+    </p>
+
 </body>
 
 </html>
