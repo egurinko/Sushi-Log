@@ -1,0 +1,38 @@
+{
+  "name": "sushi-log",
+  "version": "1.0.0",
+  "description": "Explore great SUSHI and share it !",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --fix . && mocha ./tests/**/*test.js",
+    "start": "node index.js",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback --knexfile services/db/knexfile.js ",
+    "precommit": "pretty-quick --staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egurinko/Sushi-Log.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egurinko/Sushi-Log/issues"
+  },
+  "homepage": "https://github.com/egurinko/Sushi-Log#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "eslint": "^5.8.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-problems": "^1.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "express": "^4.16.4",
+    "knex": "^0.15.2",
+    "mocha": "^5.2.0",
+    "pg": "^7.6.0",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.8.0"
+  }
+}
