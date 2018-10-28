@@ -12,7 +12,9 @@ You have one table called sushi_bars.
 In sushi_bars table, there are three columns like below.
 
 **1. id:** Auto incremental interger.
+
 **2. name:** String. Maxmum length is 50.
+
 **3. rating:** Float. You can use decimal point.
 
 # What you can do with this API
@@ -34,7 +36,7 @@ In sushi_bars table, there are three columns like below.
 - Add or Replace sushi_bar.
   /sushi_bar/replace/:id/:name/:rating
 
-**4 DELETE**
+**4. DELETE**
 
 - Delete all data
   /sushi_bar/delete
@@ -43,4 +45,4 @@ In sushi_bars table, there are three columns like below.
 
 You can interact with this API below.
 It's working on heroku.
-[DEMO]:https://sushi-log.herokuapp.com/
+[DEMO](https://sushi-log.herokuapp.com/)
